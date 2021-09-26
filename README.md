@@ -1,3 +1,3 @@
 # Kakao clone 2021
 
-Let's study html, css, js!
+Actually, physics is the best study in earth
