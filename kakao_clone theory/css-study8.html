@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <title>집에 왔씁니다</title>
+    <style>
+        input{
+            border: 5px solid black;
+        }
+        input:required{
+            border-color:tomato;   
+        }
+        input[placeholder~="name"] {
+            background-color: pink;
+        }
+        a:visited{
+            color: blueviolet;
+        }
+        a:focus{
+            color: green;
+        }
+        a:hover{
+            color: red;
+        }
+        form{
+            border: 1px solid salmon;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+        form:hover input{
+            background-color: red;
+        }
+        form:focus-within input{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <form>
+            <input type="text" placeholder="first name"/>
+            <input type="text" placeholder="last name"/>
+            <input type="password" required placeholder="password"/>
+            <button>최정호바보</button>
+            <a href="https://apple.com">Go to apple</a>
+                <input type="text" name="" id="">
+                <input type="text" name="" id="">
+                <input type="text" name="" id="">
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gorani</title>
+        <style>
+            a {
+                color: wheat;
+                background-color: tomato;
+                text-decoration: none;
+                padding: 3px 5px;
+                border-radius: 5px;
+                font-size: 55px;
+                transition: all 1s linear;
+            }
+            a:hover {
+                border-radius: 20px;
+                color: tomato;
+                background-color: wheat;
+            }
+            img {
+                border: 7px solid pink;
+                border-radius: 50%;
+                transition: transform 1s ease-in-out;
+            }
+            img:hover {
+                transform: rotateY(360deg);
+            }
+        </style>
+    </head>
+    <body>
+        <a href="#">Go home</a>
+        <img src="img/angel.jpg">
+        <span>Gorani</span>
+    </body>
+</html>
+<!--transition : change state from one to another-->
+<!--transformation is 3d 움직임 특이 translate는 margin이나padding의 영향 받지 않음 => 다른 요소의 box를 변형시키지 않고 원하는 요소를 이동시키기 위해서 사용!-->
+<!--transition과 transfromation의 조합!-->
+<!--matrix3d()가 재밌읍니다. 어떻게 matrix로(선형변환) translation을 표현하나 했는데 차원을 하나 늘려서 해결한다는 느낌이었네요!!-->

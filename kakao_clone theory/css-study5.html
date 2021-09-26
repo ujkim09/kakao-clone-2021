@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <title>집에 왔씁니다</title>
+    <style>
+        body{
+            height: 1000vh;
+            margin: 50px;
+        }
+        div{
+            width: 300px;
+            height: 300px;
+            color: white;
+            background-color: red;
+            position: relative;
+        }
+        .green{
+            width: 100px;
+            height: 100px;
+            color: white;
+            background-color: teal;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        </style>
+</head>
+<body>
+    <div>
+        <div class="green"></div>
+    </div>
+</body>
+</html>
+<!--position이 absolute인 box의 위치는 realative 한 부모 tag의 위치를 기준으로 정해진다. 그게없으면 body를 기준으로!-->

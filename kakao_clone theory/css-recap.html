@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <style>
+            :root {
+                --main-color: rgb(100,200,0);
+                --default-border: 1px solid var(--main-color);
+            }
+
+            body {
+                height: 300vh;
+                margin: 50px;
+            }
+            p {
+                color: var(--main-color);
+                background-color: rgba(52,1,30,.9);
+            }
+            a {
+                color: var(--main-color);
+                border: var(--default-border);
+            }
+        </style>
+    </head>
+    <body>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque maiores eligendi sapiente, quasi neque ipsam odio aut distinctio voluptates perspiciatis quia, quis ea. Voluptas molestiae ut numquam, blanditiis quisquam suscipit.
+        </p>
+        <a href="">help!</a>
+    </body>
+</html>
+<!--
+    :root는 결국 css에서 variable을 만들때 쓴다... 그런의의
+    recap 요약 긁어옴
+    #combinator
+p span{} 부모자식관계
+p>span{} 부모와 바로 밑 자식관계
+p+span{} 바로 다음에 오는 형제관계
+p~span{} 바로 다음에 오지 않아도 되는 형제관계
+
+#attribute
+input[type="word"]{} type="word"인 input만을 선택
+input[type~="word"]{} "word"를 포함하는 input선택
+input[type$="word"]{} 끝에 "word"가 오는 input 선택
+input[type^="word"]{} 앞에 "word"가 오는 input 선택
+
+#state
+:hover 커서가 올라간상태
+:active 클릭할때
+:focus 키보드로 선택한경우
+:visited link에서 쓰이고 사이트를 방문한 이력이 있을경우
+:focus-within 자식들중 하나라도 focus상태에 있다면 부모가 바뀔때 쓰임
+
+#pseudo element
+::placeholder placehoder만을 꾸밀때 사용
+::selection 드래그 했을때
+::first-letter 앞 글자에
+::first-line 첫 줄
+-->

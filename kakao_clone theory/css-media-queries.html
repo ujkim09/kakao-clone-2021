@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>지은누나 미안해...</title>
+        <style>
+            body {
+                display: flex;
+                height: 100vh;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+            div {
+                background-color: blue;
+                width: 100px;
+                height: 100px;
+            }
+            /*@media screen and (max-width: 600px){
+                div {
+                    background-color: teal;
+                }}*/
+            @media screen and (min-width: 601px) and (max-width: 1200px) and (orientation: landscape) {
+                div {
+                    background-color: red;
+                }}
+            /*@media screen and (min-width: 900px){
+                div {
+                    background-color: green;
+                }}*/
+            @media screen and (orientation: landscape) {
+                span {
+                    display: none;
+                }
+            }
+            @media print {
+                body {
+                    background-color: pink;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div></div>
+        <span>please flip your phone:(</span>
+    </body>
+</html>
+
+<!--
+    media query : css만을 이용해서 스크린의 사이즈를 알 수 있는 방법
+    screen size에 따른 사이트의 조건을 개선할 수 있다.
+    일종의 조건문처럼 쓸 수 있나보네용.
+    media type : screen vs print(인쇄 미리보기 같은 느낌) 
+-->

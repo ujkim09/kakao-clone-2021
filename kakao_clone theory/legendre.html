@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	
+
+	<script>
+		const legendreDP = [[1], [0, 1]];
+
+		function legendre(n) {
+			if (n === 0) return [1];
+			if (n === 1) return [0, 1];
+			if (legendreDP[n] !== undefined) {
+				return legendreDP[n];
+			}
+
+			let x = legendre(n - 1);
+			let y = legendre(n - 2);
+
+			let a = x.slice();
+			let b = y.slice();
+			a.unshift(0); // multiply with x
+			b.push(0, 0);
+
+			let r = [];
+			for (let i = 0; i <= n; i++) {
+				r[i] = (2 - 1 / n) * a[i] + (-1 + 1 / n) * b[i];
+			}
+
+			if (legendreDP[n] === undefined) {
+				legendreDP[n] = r;
+			}
+			return r;
+		}
+
+		console.log('result', legendre(100));
+		console.log('dp', legendreDP);
+	</script>
+</body>
+</html>
